@@ -1,0 +1,40 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    ansi (1.4.3)
+    binding_of_caller (0.7.2)
+      debug_inspector (>= 0.0.1)
+    builder (3.2.2)
+    coderay (1.0.9)
+    debug_inspector (0.0.2)
+    hashie (2.0.5)
+    method_source (0.8.2)
+    minitest (4.7.5)
+    minitest-reporters (0.14.23)
+      ansi
+      builder
+      minitest (>= 2.12, < 5.0)
+      powerbar
+    powerbar (1.0.11)
+      ansi (~> 1.4.0)
+      hashie (>= 1.1.0)
+    pry (0.9.12.2)
+      coderay (~> 1.0.5)
+      method_source (~> 0.8)
+      slop (~> 3.4)
+    pry-nav (0.2.3)
+      pry (~> 0.9.10)
+    pry-stack_explorer (0.4.9.1)
+      binding_of_caller (>= 0.7)
+      pry (>= 0.9.11)
+    slop (3.4.6)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  minitest (~> 4.7)
+  minitest-reporters
+  pry
+  pry-nav
+  pry-stack_explorer
