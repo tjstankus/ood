@@ -9,15 +9,16 @@ describe BeerSong do
 
     context "for multiple bottles of beer" do
       it "sings verse correctly" do
-        expected = "8 bottles of beer on the wall, 8 bottles of beer.\nTake one down and pass it around, 7 bottles of beer on the wall.\n"
+        expected = "8 bottles of beer on the wall, 8 bottles of beer.\n" +
+          "Take one down and pass it around, 7 bottles of beer on the wall.\n"
         expect(beer_song.verse(8)).to eq(expected)
       end
     end
 
     context "for 2 bottles of beer" do
       it "singularizes second part of verse" do
-        pending
-        expected = "2 bottles of beer on the wall, 2 bottles of beer.\nTake one down and pass it around, 1 bottle of beer on the wall.\n"
+        expected = "2 bottles of beer on the wall, 2 bottles of beer.\n" +
+          "Take one down and pass it around, 1 bottle of beer on the wall.\n"
         expect(beer_song.verse(2)).to eq(expected)
       end
     end
