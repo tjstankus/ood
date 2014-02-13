@@ -10,9 +10,11 @@ class BeerSong
   private
 
   def verse_second_line(num)
-    phrase = "#{num} " + (num == 1 ? "bottle" : "bottles")
-    "Take one down and pass it around, #{phrase} of beer on the wall.\n"
+    "Take one down and pass it around, #{phrase(num)} of beer on the wall.\n"
   end
 
+  def phrase(num)
+    "#{num} " + (num == 1 ? "bottle" : "bottles")
+  end
 
 end
