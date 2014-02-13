@@ -25,8 +25,8 @@ describe BeerSong do
 
     context "for 1 bottle of beer" do
       it "delivers sad news for second part of verse" do
-        pending
-        expected = "1 bottle of beer on the wall, 1 bottle of beer.\nTake it down and pass it around, no more bottles of beer on the wall.\n"
+        expected = "1 bottle of beer on the wall, 1 bottle of beer.\n" +
+          "Take it down and pass it around, no more bottles of beer on the wall.\n"
         expect(beer_song.verse(1)).to eq(expected)
       end
     end
