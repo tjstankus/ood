@@ -16,6 +16,7 @@ describe BeerSong do
 
     context "for 2 bottles of beer" do
       it "singularizes second part of verse" do
+        pending
         expected = "2 bottles of beer on the wall, 2 bottles of beer.\nTake one down and pass it around, 1 bottle of beer on the wall.\n"
         expect(beer_song.verse(2)).to eq(expected)
       end
@@ -23,6 +24,7 @@ describe BeerSong do
 
     context "for 1 bottle of beer" do
       it "delivers sad news for second part of verse" do
+        pending
         expected = "1 bottle of beer on the wall, 1 bottle of beer.\nTake it down and pass it around, no more bottles of beer on the wall.\n"
         expect(beer_song.verse(1)).to eq(expected)
       end
@@ -30,6 +32,7 @@ describe BeerSong do
 
     context "for 0 bottles of beer" do
       it "instructs to buy more" do
+        pending
         expected = "No more bottles of beer on the wall, no more bottles of beer.\nGo to the store and buy some more, 99 bottles of beer on the wall.\n"
         expect(beer_song.verse(0)).to eq(expected)
       end
@@ -41,6 +44,7 @@ describe BeerSong do
 
     context "given two numbers, the first greater than the second" do
       it "sings verses from the first number down to the second" do
+        pending
         expected = "8 bottles of beer on the wall, 8 bottles of beer.\nTake one down and pass it around, 7 bottles of beer on the wall.\n\n7 bottles of beer on the wall, 7 bottles of beer.\nTake one down and pass it around, 6 bottles of beer on the wall.\n\n6 bottles of beer on the wall, 6 bottles of beer.\nTake one down and pass it around, 5 bottles of beer on the wall.\n\n"
         expect(beer_song.verses(8, 6)).to eq(expected)
       end
@@ -48,6 +52,7 @@ describe BeerSong do
 
     context "given a single number" do
       it "sings down to 0" do
+        pending
         expected = "3 bottles of beer on the wall, 3 bottles of beer.\nTake one down and pass it around, 2 bottles of beer on the wall.\n\n2 bottles of beer on the wall, 2 bottles of beer.\nTake one down and pass it around, 1 bottle of beer on the wall.\n\n1 bottle of beer on the wall, 1 bottle of beer.\nTake it down and pass it around, no more bottles of beer on the wall.\n\nNo more bottles of beer on the wall, no more bottles of beer.\nGo to the store and buy some more, 99 bottles of beer on the wall.\n\n"
         expect(beer_song.verses(3)).to eq(expected)
       end
