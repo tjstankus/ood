@@ -16,7 +16,6 @@ describe BeerSong do
 
     context "for 2 bottles of beer" do
       it "singularizes second part of verse" do
-        pending
         expected = "2 bottles of beer on the wall, 2 bottles of beer.\nTake one down and pass it around, 1 bottle of beer on the wall.\n"
         expect(beer_song.verse(2)).to eq(expected)
       end
