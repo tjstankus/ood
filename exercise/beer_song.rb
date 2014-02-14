@@ -1,7 +1,7 @@
 class VerseStrategy
-  def self.verse(num)
-    "#{num} bottles of beer on the wall, #{num} bottles of beer.\n" +
-    "Take one down and pass it around, #{num-1} bottles of beer on the wall.\n"
+  def self.verse(count)
+    "#{count} bottles of beer on the wall, #{count} bottles of beer.\n" +
+    "Take one down and pass it around, #{count-1} bottles of beer on the wall.\n"
   end
 end
 
@@ -34,8 +34,8 @@ class BeerSong
     0 => Verse0Strategy.verse
   }
 
-  def verse(num)
-    verse_via_strategy(num)
+  def verse(count)
+    verse_via_strategy(count)
   end
 
   def verses(from, to=0)
@@ -44,8 +44,8 @@ class BeerSong
 
   private
 
-  def verse_via_strategy(num)
-    VERSE_STRATEGIES.fetch(num, VerseStrategy.verse(num))
+  def verse_via_strategy(count)
+    VERSE_STRATEGIES.fetch(count, VerseStrategy.verse(count))
   end
 
 end
