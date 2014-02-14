@@ -5,7 +5,7 @@ class VerseStrategy
   end
 end
 
-class VerseTwoStrategy
+class Verse2Strategy
   def self.verse
     "2 bottles of beer on the wall, 2 bottles of beer.\n" +
     "Take one down and pass it around, 1 bottle of beer on the wall.\n"
@@ -22,7 +22,7 @@ end
 class BeerSong
 
   VERSE_STRATEGIES = {
-    2 => VerseTwoStrategy.verse,
+    2 => Verse2Strategy.verse,
     1 => Verse1Strategy.verse
   }
 
