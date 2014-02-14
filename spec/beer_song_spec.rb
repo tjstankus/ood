@@ -33,8 +33,8 @@ describe BeerSong do
 
     context "for 0 bottles of beer" do
       it "instructs to buy more" do
-        pending
-        expected = "No more bottles of beer on the wall, no more bottles of beer.\nGo to the store and buy some more, 99 bottles of beer on the wall.\n"
+        expected = "No more bottles of beer on the wall, no more bottles of beer.\n" +
+          "Go to the store and buy some more, 99 bottles of beer on the wall.\n"
         expect(beer_song.verse(0)).to eq(expected)
       end
     end

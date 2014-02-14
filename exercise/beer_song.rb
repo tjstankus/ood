@@ -19,11 +19,19 @@ class Verse1Strategy
   end
 end
 
+class Verse0Strategy
+  def self.verse
+    "No more bottles of beer on the wall, no more bottles of beer.\n" +
+    "Go to the store and buy some more, 99 bottles of beer on the wall.\n"
+  end
+end
+
 class BeerSong
 
   VERSE_STRATEGIES = {
     2 => Verse2Strategy.verse,
-    1 => Verse1Strategy.verse
+    1 => Verse1Strategy.verse,
+    0 => Verse0Strategy.verse
   }
 
   def verse(num)
