@@ -38,7 +38,8 @@ class BeerSong
     verse_via_strategy(num)
   end
 
-  def verses(from, downto=0)
+  def verses(from, to=0)
+    from.downto(to).collect { |i| verse(i) }.join("\n") + "\n"
   end
 
   private
